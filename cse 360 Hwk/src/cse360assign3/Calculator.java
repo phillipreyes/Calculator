@@ -36,7 +36,7 @@ public class Calculator {
 	public void add (int value) {
 		
 		total = total + value;
-	    addHistory( "+" , value + "" );
+	    addHistory("+" , value + "");
 	}
 	
 	/**
@@ -47,7 +47,7 @@ public class Calculator {
 	public void subtract (int value) {
 		
 		total = total - value;
-		addHistory( "-", value + "" );
+		addHistory("-", value + "");
 	}
 	
 	/**
@@ -58,7 +58,7 @@ public class Calculator {
 	public void multiply (int value) {
 		
 		total = total * value;
-		addHistory( "*", value + "" );
+		addHistory( "*", value + "");
 		
 	}
 	
@@ -75,7 +75,7 @@ public class Calculator {
 		 
 			total = total / value;
 		}
-		addHistory( "/", value + "" );
+		addHistory("/", value + "");
 	}
 	
 	/**
@@ -92,9 +92,9 @@ public class Calculator {
 	 * @param operator
 	 * @param number
 	 */
-	public void addHistory ( String operator, String number ) {
+	public void addHistory (String operator, String number) {
 		
-		history = history.concat( " " + operator + " " + number );
+		history = history.concat(" " + operator + " " + number);
 	
 	}
 	
